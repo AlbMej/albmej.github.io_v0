@@ -62,7 +62,8 @@ a {
 }
 
 .header p {
-  color: #fff;
+  color: #e2e2e2;
+  font-size: 1.4em;
   font-weight: 500;
   letter-spacing: 8px;
   margin-bottom: 40px;
@@ -189,10 +190,17 @@ width: 100%;
 	color: rgb(253,253,130);
 }
 
-.about .title {
+.exp #title {
   text-decoration: underline;
 }
 
+.projects #title {
+  text-decoration: underline;
+}
+
+.edu #title {
+  text-decoration:underline;
+}
 
 /* Jumbotron */
 .jumbotron {
