@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<style></style> 
+  <head>
+    <link href= "https://fonts.google.com/specimen/Fira+Mono?selection.family=Fira+Mono" type='text/css'>
+    <link href="../main.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Alberto Mejia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    </script>
+  </head>
+  <body>
+ 
+  <div class="nav">
+      <div class="container">
+        <ul>
+
+          <a href="#me"><li>About</li></a>
+          <a href="#ex"><li>Experience</li></a>
+          <a href="#pr"><li>Projects</li></a>
+          <a href="#ed"><li>Education</li></a>
+          <a href="#con"><li>Contact</li></a>
+
+        </ul> 
+      </div>
+    </div>
+    <div id="particles-js"></div>
+    
+    <div class="header">
+
+      <div class="container">
+
+
+        <h1>Alberto Mejia</h1>
+        <p>Computer Science Enthusiast, Hobbyist, Student.</p>
+        
+        <a class = "btn" href="https://www.facebook.com/alberto.mejia.355" target="_blank">Facebook</a>
+        <a class = "btn" href="mailto:albertomejia295@gmail.com" target="_blank">Email</a>
+        <a class = "btn" href="https://www.linkedin.com/in/albmej/" target="_blank">LinkedIn</a>
+        <a class = "btn" href="https://github.com/AlbMej" target="_blank">GitHub</a>
+        <a class = "btn" href="" target="">Resume</a>
+        <style type="text/css">
+          a.btn {
+          border: thin solid grey;
+          color: #e2e2e2;
+          }
+        </style>
+        <!--   Moving away particles
+        <script src = "particles.js"></script> 
+        <script src = "app.js"></script>  
+        -->
+      
+        <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+        <script src="/index.js"></script>
+
+      </div>
+    </div>
+    
+    
+
+    <div class="main">
+      <div class="container">
+      <div class = "about" id = "me">
+        <img src="/Twitter_prof_pic.jpg" height="30%" width="30%">
+        <h2>About Me</h2>
+        <p>As you should know by now, my name is Alberto Mejia. I am a Sophmore at the University of Connecticut pursuing a Bachelor's degree in Computer Science.</p>
+        <p>My hobbies span a few fields of engineering, but I am most interested in Computer Science. I enjoy teaching just as much as I enjoy learning.</p>
+        <p>I am seeking an internship for the summer of 2018. Till then, I will be expanding and polishing my skills. Please take a moment to go through my website and if you are interested in what you see, contact me.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main">
+      <div class="container">
+      <div class = "exp" id = "ex">
+        <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=o3ZHpBR5hI5Pvs6yYZb0jChLFKY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdfyHpK5SJLLeiuV5HLSkclFUyKfL5EzXoD5a-fdi7KY93i5W2JY24ZxUBbFImi24" height="35%" width="35%">
+        <h2>Experience</h2>
+        <p id = "title" >#EarlyBird Program Participant at Twitter</p>
+        <p>I was one of 27 attendees selected out of 900+ applicants to attend a five-day interactive program for first-year computer science majors focused on professional and technical development including coding, networking, personal branding, resume writing,interview skills. </p>
+        <p>I worked with a team of 6 to create a new tweet feature, named Tweet Time, based on our developed design document. The project was later presented to many engineers, mentors, and participants; including Twitter CEO, Jack Dorsey, and Vice President of Engineering, Nandini Ramani.</p>
+
+        <img src="/afya intern.jpg" height="35%" width="35%">
+        <a href="https://www.linkedin.com/in/albmej/detail/treasury/position:840194169/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAB8OaRwBW561ihmhJwIX4m9pKUlNxpjLTBY%2C1476389989743)" target="_blank"><p id = "title" >Biomedical Equipment Technician Intern</p>
+        <p> 09/2015 - 06/2016 <p></a>
+        <p>I received hands on experience with biomedical equipment as well as typical test and analysis instruments used in testing, maintaining and troubleshooting such equipment. I went through vaious lectures and labs on Electronic, Electrical, and Biomedical engineering. A list of of my duties can be found on LinkedIn.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+      <div class = "projects" id = "pr">
+        <img src="https://forge.typo3.org/attachments/download/19232/website-screenshot.png" height="30%" width="30%">
+        <h2>Projects</h2>
+
+        <p id = "title">This Website</p>
+        <p>-August 2017-</p>
+        <p>Built using only HTML,CSS, and little Javascript. Deployed and hosted using Jekyll and Github Pages.</p>
+        <p>The purpose of this project was to enhance my digital footprint, have a place to showcase my work, and learn new skills by doing.</p>
+
+        <p id = title>Tic-Tac-Toe</p>
+        <p>-November 2016-</p>
+        <p>Using my knowledge of basic data structures and python, I implemented a two-dimensional list to create, and display, a grid. Players would have input an X and Y coordinate to act as indices for the list. Doing so would place either an "X" or an "O" at that location.</p>
+
+        <img src="/Prosthetic.webp" height="30%" width="30%">
+        <a href="https://drive.google.com/open?id=1Do-Mhdtq44RVaFZlOtabjkZhOqGaTP8giuRgMf2CQBk" target="_blank"><p id = "title">3D Printed Prosthetic Hand-and-Forearm</p></a>
+        <p id = "date">-May 2016-</p>
+        <p>For my Senior Tech Prep project I built a prosthetic and combined it with a Myoware Muscle Sensor. The sensor would interpret the electrical signals from muscles and produce a Simple Analog Signal. From theses Analog inputs, the Pulse Width Modulation pins on an Arduino simulate an analog output, controlling servos placed in the base of the forearm.</p>
+        <p>The purpose of this project was to combat the expensive myoelectric prosthetics on the market and offer those in third world countries access to what they may consider a luxury.</p>
+
+        <p id = title>EKG Patient Simulator</p>
+        <p>An EKG tester that connects to an EKG monitor delivering the typical EKG signal. Using  various electronic components and a 
+        breadboard, this project allows for a cheap alternative from the expensive Patient Simulators. This helps small hospitals in various developing countries. (12th Grade)</p>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+      <div class = "edu" id = "ed">
+        <img src="http://sportslabs-webproxy.imgix.net/http%3A%2F%2Fstatic.silverchalice.co%2Fci-prod%2F2016%2F03%2F11%2F20160311213553_march_madness_monitor_connecticut_png?s=69d4a2ee64a69f7aafe6c5580971d4a6" height="35%" width="35%">
+        <h2>Education</h2>
+        <p id = "title" >University of Connecticut</p>
+        <p>⚫ Major: Computer Science</p>
+        <p>⚫ Relevant Coursework: Intro to Computing for Engineers, Data Stuctures and Object Oriented Design.</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Saunders_high_school_yonkers_ny.jpg" height="35%" width="35%">
+        <p id = "title" >Saunders Trades and Technical High School</p>
+        <p>⚫ Major: Electronic Computer Circuitry (E.C.C)</p>
+        <p>⚫ GPA: 3.7</p>
+        <p>⚫ Relevant Coursework: CCNA Routing and Switching, Cisco Network Academy IT Essentials Course, Digital Electronics, AC/DC Circuits, Digital Logic Design, Electronic and Computer Circuitry Drafting(CAD), Solid State Elictrical Theory</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container" id = "con">
+        <h2>Want to reach me?</h2>
+        <p>Shoot me an email at me@albertomejia.com or click on of the following buttons.</p>
+        <br>
+        <div class ="last">
+        <a class = "btn" href="https://www.facebook.com/alberto.mejia.355" target="_blank">Facebook</a>
+        <a class = "btn" href="mailto:me@albertomejia.com" target="_blank">Email</a>
+        <a class = "btn" href="https://www.linkedin.com/in/albmej/" target="_blank">LinkedIn</a>
+        <a class = "btn" href="https://github.com/AlbMej" target="_blank">GitHub</a>
+        <a class = "btn" href="" target="">Resume</a>
+        <style type="text/css">
+          .jumbotron a.btn {
+            border: thin solid #F0F8FF;
+            color: #e2e2e2;
+          }
+        </style>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>Copyright &copy; Alberto Mejia 2017</p>
+      </div>
+    </div>
+  </body>
+</html>
